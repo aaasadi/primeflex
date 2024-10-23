@@ -5,6 +5,8 @@ $padding-properties: (
     'r': 'padding-right',
     'l': 'padding-left',
     'b': 'padding-bottom',
+    's': 'padding-inline-start',
+    'e': 'padding-inline-end',
     'x': ('padding-left','padding-right'),
     'y': ('padding-top','padding-bottom')
 ) !default;
@@ -15,6 +17,8 @@ $margin-properties: (
     'r': 'margin-right',
     'l': 'margin-left',
     'b': 'margin-bottom',
+    's': 'margin-inline-start',
+    'e': 'margin-inline-end',
     'x': ('margin-left','margin-right'),
     'y': ('margin-top','margin-bottom')
 ) !default;

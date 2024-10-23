@@ -1,6 +1,6 @@
 .layout-sidebar {
     position: fixed;
-    left: 0;
+    inset-inline-start: 0;
     top: 0;
     height: 100%;
     width: 300px;
@@ -84,7 +84,7 @@
                 .menu-icon {
                     width: 2rem;
                     height: 2rem;
-                    margin-right: 0.5rem;
+                    margin-inline-end: 0.5rem;
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
@@ -98,7 +98,7 @@
 
                 .menu-toggle-icon {
                     color: var(--surface-900);
-                    margin-left: auto;
+                    margin-inline-start: auto;
                     opacity: 0.5;
                 }
             }
@@ -116,9 +116,11 @@
 
             > div {
                 > ol {
-                    margin: 0 0 0 2rem;
-                    padding: 0.25rem 0 0 0.5rem;
-                    border-left: 1px solid var(--menu-border-color);
+                    margin: 0;
+                    margin-inline-start: 2rem;
+                    padding: 0.25rem 0 0 0;
+                    padding-inline-start: 0.5rem;
+                    border-inline-start: 1px solid var(--menu-border-color);
 
                     > li {
                         > ol {

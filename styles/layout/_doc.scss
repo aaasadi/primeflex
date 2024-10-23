@@ -23,8 +23,8 @@
             margin: 0;
             transition: all 0.3s;
             border-bottom: 1px solid transparent;
-            border-top-right-radius: var(--border-round);
-            border-top-left-radius: var(--border-round);
+            border-start-start-radius: var(--border-round);
+            border-start-end-radius: var(--border-round);
 
             &:hover {
                 border-bottom-color: var(--text-color);
@@ -92,7 +92,7 @@
     > a {
         color: var(--primary-color);
         opacity: 0.7;
-        margin-left: 1rem;
+        margin-inline-start: 1rem;
         display: none;
         transition: opacity 0.3s, colors 0.3s;
     }
@@ -157,21 +157,21 @@
 .doc-section-nav {
     position: sticky;
     top: 7rem;
-    right: 0;
+    inset-inline-end: 0;
     width: 14rem;
     max-height: calc(100vh - 15rem);
     list-style: none;
     margin: 0;
     padding: 0.25rem 0;
-    margin-left: 4rem;
+    margin-inline-start: 4rem;
     overflow-y: auto;
     overflow-x: hidden;
     align-self: flex-start;
 
     > .navbar-item {
         .navbar-item-content {
-            border-left: 1px solid var(--menu-border-color);
-            padding-left: 0.25rem;
+            border-inline-start: 1px solid var(--menu-border-color);
+            padding-inline-start: 0.25rem;
         }
     }
 
@@ -212,7 +212,7 @@
 
             .navbar-item {
                 .navbar-item-content {
-                    padding-left: 1rem;
+                    padding-inline-start: 1rem;
                 }
             }
         }
@@ -251,6 +251,7 @@
     @include card;
     background-color: var(--surface-overlay);
     padding-top: 0;
+    direction: ltr;
 }
 
 .doc-table {
@@ -264,14 +265,14 @@
     thead {
         position: sticky;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
         background-color: var(--surface-overlay);
     }
     th {
         border-bottom: 1px solid var(--table-border-color);
         padding: 1rem;
         padding-top: 3rem;
-        text-align: left;
+        text-align: start;
         text-transform: capitalize;
     }
 
@@ -325,7 +326,7 @@
                 .doc-option-link {
                     position: absolute;
                     top: 0;
-                    right: -1.5rem;
+                    inset-inline-end: -1.5rem;
                     color: var(--primary-color);
                     opacity: 0.7;
                     display: none;

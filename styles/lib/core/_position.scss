@@ -34,8 +34,24 @@ $bottom-locations: (
     'bottom-100': '100%'
 ) !default;
 
+$start-locations: (
+    'start-auto': 'auto',
+    'start-0': '0px',
+    'start-50': '50%',
+    'start-100': '100%'
+) !default;
+
+$end-locations: (
+    'end-auto': 'auto',
+    'end-0': '0px',
+    'end-50': '50%',
+    'end-100': '100%'
+) !default;
+
 @include style-class('position', $position-props, true);
 @include style-class('top', $top-locations, true);
 @include style-class('left', $left-locations, true);
 @include style-class('right', $right-locations, true);
 @include style-class('bottom', $bottom-locations, true);
+@include style-class('inset-inline-start', $start-locations, true);
+@include style-class('inset-inline-end', $end-locations, true);

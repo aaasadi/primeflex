@@ -6,6 +6,8 @@ $border-directions: (
     'right': 'border-right',
     'left': 'border-left',
     'bottom': 'border-bottom',
+    'start': 'border-inline-start',
+    'end': 'border-inline-end',
     'x': ('border-left','border-right'),
     'y': ('border-top','border-bottom')
 ) !default;

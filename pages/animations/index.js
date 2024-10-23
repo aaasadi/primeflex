@@ -23,9 +23,17 @@ import { ZoominDoc } from '../../components/doc/animations/zoomindoc';
 import { ZoomindownDoc } from '../../components/doc/animations/zoomindowndoc';
 import { ZoominleftDoc } from '../../components/doc/animations/zoominleftdoc';
 import { ZoominupDoc } from '../../components/doc/animations/zoominupdoc';
-import { ZoomninrightDoc } from '../../components/doc/animations/zoomninrightdoc';
+import { ZoominrightDoc, Zoominrightdoc } from '../../components/doc/animations/zoominrightdoc';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
+import { FadeinstartDoc } from '../../components/doc/animations/fadeinstartdoc';
+import { FadeinendDoc } from '../../components/doc/animations/fadeinenddoc';
+import { FadeoutendDoc } from '../../components/doc/animations/fadeoutenddoc';
+import { FadeoutstartDoc } from '../../components/doc/animations/fadeoutstartdoc';
+import { ZoominstartDoc } from '../../components/doc/animations/zoominstartdoc';
+import { ZoominendDoc } from '../../components/doc/animations/zoominenddoc';
+import { FlipstartDoc } from '../../components/doc/animations/flipstartdoc';
+import { FlipendDoc } from '../../components/doc/animations/flipenddoc';
 
 const PositionPage = () => {
     const docs = [
@@ -70,6 +78,16 @@ const PositionPage = () => {
             component: FadeinrightDoc
         },
         {
+            id: 'fadeinstart',
+            label: 'fadeinstart',
+            component: FadeinstartDoc
+        },
+        {
+            id: 'fadeinend',
+            label: 'fadeinend',
+            component: FadeinendDoc
+        },
+        {
             id: 'fadeoutleft',
             label: 'fadeoutleft',
             component: FadeoutleftDoc
@@ -78,6 +96,16 @@ const PositionPage = () => {
             id: 'fadeoutright',
             label: 'fadeoutright',
             component: FadeoutrightDoc
+        },
+        {
+            id: 'fadeoutstart',
+            label: 'fadeoutstart',
+            component: FadeoutstartDoc
+        },
+        {
+            id: 'fadeoutend',
+            label: 'fadeoutend',
+            component: FadeoutendDoc
         },
         {
             id: 'fadeinup',
@@ -120,6 +148,16 @@ const PositionPage = () => {
             component: FliprightDoc
         },
         {
+            id: 'flipstart',
+            label: 'flipstart',
+            component: FlipstartDoc
+        },
+        {
+            id: 'flipend',
+            label: 'flipend',
+            component: FlipendDoc
+        },
+        {
             id: 'flipup',
             label: 'flipup',
             component: FlipupDoc
@@ -140,9 +178,19 @@ const PositionPage = () => {
             component: ZoominleftDoc
         },
         {
-            id: 'zoomninright',
-            label: 'zoomninright',
-            component: ZoomninrightDoc
+            id: 'zoominright',
+            label: 'zoominright',
+            component: ZoominrightDoc
+        },
+        {
+            id: 'zoominstart',
+            label: 'zoominstart',
+            component: ZoominstartDoc
+        },
+        {
+            id: 'zoominend',
+            label: 'zoominend',
+            component: ZoominendDoc
         },
         {
             id: 'zoominup',

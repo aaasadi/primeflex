@@ -272,56 +272,84 @@ $animationPerspective: 2000px !default;
     }
 }
 
-.#{$prefix}fadein {
-    animation: fadein .15s linear;
-}
-
-.#{$prefix}fadeout {
-    animation: fadeout .15s linear;
+.#{$prefix}slideup {
+    animation: slideup .45s cubic-bezier(0, 1, 0, 1);
 }
 
 .#{$prefix}slidedown {
     animation: slidedown .45s ease-in-out;
 }
 
-.#{$prefix}slideup {
-    animation: slideup .45s cubic-bezier(0, 1, 0, 1);
-}
-
 .#{$prefix}scalein {
     animation: scalein .15s linear;
 }
 
-.#{$prefix}fadeinleft {
-    animation: fadeinleft .15s linear;
-}
-
-.#{$prefix}fadeoutleft {
-    animation: fadeoutleft .15s linear;
-}
-
-.#{$prefix}fadeinright {
-    animation: fadeinright .15s linear;
-}
-
-.#{$prefix}fadeoutright {
-    animation: fadeoutright .15s linear;
+.#{$prefix}fadein {
+    animation: fadein .15s linear;
 }
 
 .#{$prefix}fadeinup {
     animation: fadeinup .15s linear;
 }
 
-.#{$prefix}fadeoutup {
-    animation: fadeoutup .15s linear;
-}
-
 .#{$prefix}fadeindown {
     animation: fadeindown .15s linear;
 }
 
+.#{$prefix}fadeinleft {
+    animation: fadeinleft .15s linear;
+}
+
+.#{$prefix}fadeinright {
+    animation: fadeinright .15s linear;
+}
+
+.#{$prefix}fadeinstart {
+    animation: fadeinleft .15s linear;
+    [dir="rtl"] & {
+        animation: fadeinright .15s linear;
+    }
+}
+
+.#{$prefix}fadeinend {
+    animation: fadeinright .15s linear;
+    [dir="rtl"] & {
+        animation: fadeinleft .15s linear;
+    }
+}
+
+.#{$prefix}fadeout {
+    animation: fadeout .15s linear;
+}
+
+.#{$prefix}fadeoutup {
+    animation: fadeoutup .15s linear;
+}
+
 .#{$prefix}fadeoutdown {
     animation: fadeoutdown .15s linear;
+}
+
+.#{$prefix}fadeoutleft {
+    animation: fadeoutleft .15s linear;
+}
+
+.#{$prefix}fadeoutright {
+    animation: fadeoutright .15s linear;
+}
+
+.#{$prefix}fadeoutstart {
+    animation: fadeoutleft .15s linear;
+    [dir="rtl"] & {
+        animation: fadeoutright .15s linear;
+    }
+}
+
+.#{$prefix}fadeoutend {
+    animation: fadeoutright .15s linear;
+    [dir="rtl"] & {
+        animation: fadeoutleft .15s linear;
+    }
 }
 
 .#{$prefix}animate-width {
@@ -348,8 +376,28 @@ $animationPerspective: 2000px !default;
     animation: flipright .15s linear;
 }
 
+.#{$prefix}flipstart {
+    backface-visibility: visible;
+    animation: flipleft .15s linear;
+    [dir="rtl"] & {
+        animation: flipright .15s linear;
+    }
+}
+
+.#{$prefix}flipend {
+    backface-visibility: visible;
+    animation: flipright .15s linear;
+    [dir="rtl"] & {
+        animation: flipleft .15s linear;
+    }
+}
+
 .#{$prefix}zoomin {
     animation: zoomin .15s linear;
+}
+
+.#{$prefix}zoominup {
+    animation: zoominup .15s linear;
 }
 
 .#{$prefix}zoomindown {
@@ -364,8 +412,18 @@ $animationPerspective: 2000px !default;
     animation: zoominright .15s linear;
 }
 
-.#{$prefix}zoominup {
-    animation: zoominup .15s linear;
+.#{$prefix}zoominstart {
+    animation: zoominleft .15s linear;
+    [dir="rtl"] & {
+        animation: zoominright .15s linear;
+    }
+}
+
+.#{$prefix}zoominend {
+    animation: zoominright .15s linear;
+    [dir="rtl"] & {
+        animation: zoominleft .15s linear;
+    }
 }
 
 $animation-duration-props: (

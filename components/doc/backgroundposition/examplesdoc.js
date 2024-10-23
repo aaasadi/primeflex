@@ -53,11 +53,11 @@ export function ExamplesDoc(props) {
                     </div>
                     <div className="flex flex-wrap align-items-center justify-content-center">
                         <div
-                            className="bg-bottom bg-no-repeat w-10rem h-10rem bg-primary border-round m-3"
+                            className="bg-left-bottom bg-no-repeat w-10rem h-10rem bg-primary border-round m-3"
                             style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg')", backgroundSize: '5rem' }}
                         ></div>
                         <div
-                            className="bg-left-bottom bg-no-repeat w-10rem h-10rem bg-primary border-round m-3"
+                            className="bg-bottom bg-no-repeat w-10rem h-10rem bg-primary border-round m-3"
                             style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg')", backgroundSize: '5rem' }}
                         ></div>
                         <div
