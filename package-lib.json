@@ -1,16 +1,16 @@
 {
-    "name": "primeflex",
-    "version": "3.3.1",
-    "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
+    "name": "primeflexrtl",
+    "version": "1.0.0",
+    "description": "PrimeFlexRTL is a lightweight and responsive CSS library that is forked from PrimeFlex and provides full support for right-to-left (RTL) languages.",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/primefaces/primeflex.git"
+        "url": "git+https://github.com/aaasadi/primeflex.git"
     },
-    "keywords": ["grid", "responsive", "flex", "css utility"],
-    "author": "PrimeTek",
+    "keywords": ["primeflex", "primeng", "rtl-support", "css utility"],
+    "author": "amir abbas asadi",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/primefaces/primeflex/issues"
+        "url": "https://github.com/aaasadi/primeflex/issues"
     },
     "homepage": "https://primeflex.org"
 }
